@@ -1,0 +1,240 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: 'Pirata One', cursive;
+    background-color: black;
+    color: white;
+}
+
+header{
+    flex-direction: column;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.topName{
+    font-size: 16rem;
+    text-align: center;
+    
+}
+
+.socialContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+.socialIcon{
+    width: 1rem;
+    margin: 1rem 2rem 2rem;
+    filter:invert();
+}
+
+.bandImageCont{
+display:flex;
+justify-content: center;
+}
+.bandImage{
+    width: 500px;
+}
+
+.fade-in {
+    animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.row{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.halfCol{
+    width: 30%;
+}
+
+.playerWrapper{
+    height:500px;
+    padding: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 75%;
+    transition: 2s;
+}
+
+.playerWrapper:hover{
+    opacity: 100%;
+}
+
+@keyframes fadein {
+    from{opacity: 0%;}
+    to{opacity: 70%;}
+}
+
+.playerContainer{
+    width:100%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: url("imgs/backOrnLace.png");
+    background-size: cover;
+    box-shadow: 
+    12px 12px 16px 0 rgba(30, 30, 66, 0.562),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.player{
+    height: 200px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 
+    12px 12px 16px 0 rgba(30, 30, 66, 0.562),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.bandMemberImg{
+    height: 300px;
+    margin: 0px 30px;
+    border-radius: 30px;
+
+}
+
+.firstGrad{
+    background: linear-gradient(176deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 16%, rgba(7,13,117,1) 66%, rgba(143,9,9,1) 100%);
+    padding-bottom: 300px;
+   
+}
+
+.merchHolder{
+    padding: 20px 30px 10px;
+    margin: 0px 50px;
+    background-color: black;
+    border-radius: 25px;
+    flex-direction: column;
+    box-shadow: 
+    12px 12px 16px 0 rgba(73, 5, 5, 0.562),
+    -8px -8px 12px 0 rgba(30, 30, 66, 0.562);
+}
+
+.merchImg{
+    width: 200px;
+}
+
+.eventContainer{
+    padding: 20px 30px 10px;
+    margin: 50px 50px;
+    background-color: black;
+    border-radius: 25px;
+    flex-direction: column;
+    
+    box-shadow: 
+    12px 12px 16px 0 rgba(6, 5, 12, 0.562),
+    -8px -8px 12px 0 rgba(73, 5, 5, 0.562);
+}
+
+.eventWrapper{
+background-color:rgba(6, 5, 12, 0.562) ;
+padding:10px;
+}
+
+.eventText{
+font-size: 2rem;
+}
+
+.newsContainer{
+    padding: 20px 30px 10px;
+    margin: 50px 50px;
+    background-color: black;
+    border-radius: 25px;
+    flex-direction: column;
+    box-shadow: 
+    12px 12px 16px 0 rgba(6, 5, 12, 0.562),
+    -8px -8px 12px 0 rgba(73, 5, 5, 0.562);
+    max-width: 300px;
+}
+
+.newsWrapper{
+background-color: rgba(73, 5, 5, 0.562);
+padding:10px;
+}
+
+.newsText{
+    font-size: 2rem;
+}
+
+.epkContainer{
+    padding: 20px 30px 10px;
+    margin: 0px 50px;
+    background-color: black;
+    border-radius: 25px;
+    flex-direction: column;
+    box-shadow: 
+    12px 12px 16px 0 rgba(6, 5, 12, 0.562),
+    -8px -8px 12px 0 rgba(73, 5, 5, 0.562);
+    min-width: 300px;
+}
+
+.playerAnimationWrapper{
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 600px;
+    border-style: solid;
+    border-inline: solid;
+    border-width: 20px;
+    border-color: rgb(41, 40, 40);
+}
+
+#DwaleUpper{
+    width: 600px;
+    height: 400px;
+}
+
+#DwaleLower{
+    width: 500x;
+    height: 100px;
+}
+@media (max-width:750px){
+    .ornCol{
+        display: none;
+    }
+
+    #DwaleUpper{
+        width: 500px;
+        height: 204px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .topName{
+        font-size: 8rem;
+    }
+
+    .videoFrame{
+        width: 80%;
+    }
+
+    .videoBacking{
+        width: 100%;
+    }
+
+    .playerAnimationWrapper{
+        border: none;
+    }
+}
+
+

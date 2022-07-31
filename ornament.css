@@ -1,0 +1,85 @@
+.ornCol{
+position: fixed;
+top:0px
+}
+
+.ornLeft{
+left:0px;
+}
+
+.ornRight{
+    right:0px;
+}
+
+.ornColImg{
+    height: 100Vh;
+    position: sticky;
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin:0px;
+}
+
+.pathIn{
+    stroke-dasharray: 1;
+    stroke-dashoffset: -1;
+    animation: dash 2s linear forwards;
+    animation-delay: 3s;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .topBar{
+    stroke-dasharray: 1;
+    stroke-dashoffset: -1;
+    animation: dashLeaf 5s linear forwards;
+    animation-delay: 5s;
+  }
+
+  @keyframes dashLeaf {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .leaf{
+    fill-opacity: 0%;
+    animation: leafFill 5s linear forwards;
+    animation-delay: 6s;
+  }
+
+  @keyframes leafFill {
+    to{
+      fill-opacity: 100%;
+    }
+  }
+
+  .largePlay{
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dashLeaf 5s linear forwards;
+    animation-delay: 11s;
+  }
+
+  .videoFrame{
+    margin: 50px;
+    
+    border: 50px solid;
+    border-image: url("imgs/vfOrn.png") 30% round;
+  }
+
+  .videoBacking{
+    background-color: white;
+    padding:25px;
+    
+  }
+
+  
+
